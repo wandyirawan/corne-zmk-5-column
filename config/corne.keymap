@@ -131,10 +131,10 @@
 
         colemak_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp F        &kp P               &kp B               &kp J          &kp L        &kp U            &kp Y    &kp SEMICOLON  &none
-&none  &kp A  &kp R  &kp S        &kp T               &kp G               &kp M          &kp N        &kp E            &kp I    &kp O          &none
-&none  &kp X  &kp C  &kp D        &kp V               &kp Z               &kp K          &kp H        &kp COMMA        &kp DOT  &kp FSLH       &none
-                     &lt 2 SPACE  &mt LEFT_GUI ENTER  &mt LSHFT ESCAPE    &mt RCTRL TAB  &lt 1 SPACE  &lt 2 BACKSPACE
+&none  &kp Q  &kp W  &kp F        &kp P               &kp B              &kp J          &kp L            &kp U         &kp Y    &kp SEMICOLON  &none
+&none  &kp A  &kp R  &kp S        &kp T               &kp G              &kp M          &kp N            &kp E         &kp I    &kp O          &none
+&none  &kp X  &kp C  &kp D        &kp V               &kp Z              &kp K          &kp H            &kp COMMA     &kp DOT  &kp FSLH       &none
+                     &lt 2 SPACE  &mt LEFT_GUI ENTER  &mt LALT ESCAPE    &mt LCTRL TAB  &mt LSHFT SPACE  &lt 1 ESCAPE
             >;
         };
 
