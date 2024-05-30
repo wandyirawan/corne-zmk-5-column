@@ -122,6 +122,11 @@
             bindings = <&mo 3>;
             key-positions = <36 37>;
         };
+
+        caps_combo {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <28 29>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
