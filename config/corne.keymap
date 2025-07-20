@@ -102,6 +102,11 @@
             key-positions = <36 37 40 41>;
         };
 
+        gallium_switch {
+            bindings = <&tog 5>;
+            key-positions = <38 39 40 41>;
+        };
+
         system_reset {
             bindings = <&sys_reset>;
             key-positions = <3 4 5>;
@@ -170,6 +175,15 @@
 &trans  &kp A  &kp S  &kp D             &kp F         &kp G             &kp H            &kp J            &kp K                &kp L    &kp SEMI  &trans
 &trans  &kp Z  &kp X  &kp C             &kp V         &kp B             &kp N            &kp M            &kp COMMA            &kp DOT  &kp FSLH  &trans
                       &mt LEFT_GUI DEL  &lt 1 ESCAPE  &mt LALT SPACE    &mt LCTRL ENTER  &lt 2 BACKSPACE  &mt LSHFT BACKSPACE
+            >;
+        };
+
+        gallium_colemak_layer {
+            bindings = <
+&none  &kp B  &kp L  &kp D             &kp W         &kp Z             &kp SQT          &kp F      &kp O                     &kp U      &kp J       &none
+&none  &kp N  &kp R  &kp T             &kp S         &kp G             &kp Y            &kp H      &kp A                     &kp E      &kp I       &none
+&none  &kp Q  &kp X  &kp M             &kp C         &kp V             &kp K            &kp P      &kp SLASH                 &kp COMMA  &kp PERIOD  &none
+                     &mt LEFT_GUI DEL  &lt 1 ESCAPE  &mt LALT SPACE    &mt LCTRL ENTER  &lt 2 TAB  &mt RC(LSHIFT) BACKSPACE
             >;
         };
     };
