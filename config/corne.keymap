@@ -102,7 +102,7 @@
             key-positions = <36 37 40 41>;
         };
 
-        gallium_switch {
+        canary_switch {
             bindings = <&tog 5>;
             key-positions = <38 39 40 41>;
         };
@@ -133,39 +133,39 @@
     keymap {
         compatible = "zmk,keymap";
 
-        canary_layer {
+        gallium_layer {
             bindings = <
-&none  &kp W  &kp L  &kp Y             &kp P         &kp B             &kp Z            &kp F      &kp O                     &kp U      &kp SQT     &none
-&none  &kp C  &kp R  &kp S             &kp T         &kp G             &kp M            &kp N      &kp E                     &kp I      &kp A       &none
-&none  &kp Q  &kp J  &kp V             &kp D         &kp K             &kp X            &kp H      &kp SLASH                 &kp COMMA  &kp PERIOD  &none
-                     &mt LEFT_GUI DEL  &lt 1 ESCAPE  &mt LALT SPACE    &mt LCTRL ENTER  &lt 2 TAB  &mt RC(LSHIFT) BACKSPACE
+&none  &kp B  &kp L  &kp D         &kp C         &kp V             &kp J            &kp Y      &kp O                     &kp U          &kp COMMA   &none
+&none  &kp N  &kp R  &kp T         &kp S         &kp G             &kp P            &kp H      &kp A                     &kp E          &kp I       &none
+&none  &kp X  &kp Q  &kp M         &kp W         &kp Z             &kp K            &kp F      &kp SQT                   &kp SEMICOLON  &kp PERIOD  &none
+                     &mt LALT DEL  &lt 1 ESCAPE  &mt LGUI SPACE    &mt LCTRL ENTER  &lt 2 TAB  &mt RC(LSHIFT) BACKSPACE
             >;
         };
 
-        numsym_layer {
+        num_layer {
             bindings = <
-&trans  &kp CAPS       &kp KP_NUM  &kp UP_ARROW    &kp KP_EQUAL   &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS      &trans
-&trans  &kp SEMICOLON  &kp LEFT    &kp DOWN_ARROW  &kp LEFT       &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS     &trans
-&trans  &kp GRAVE      &kp PG_UP   &kp CAPS        &kp PAGE_DOWN  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                                   &trans          &trans         &to 4                   &trans                 &trans     &kp KP_N0
+&trans  &kp F1     &kp F2    &kp F3    &kp F4   &kp F5       &kp F6     &kp N7  &kp N8  &kp N9  &kp KP_PLUS      &trans
+&trans  &kp F7     &kp F8    &kp F9    &kp F10  &kp F11      &kp F12    &kp N4  &kp N5  &kp N6  &kp KP_MINUS     &trans
+&trans  &kp PSCRN  &kp CAPS  &kp HOME  &kp END  &kp PG_UP    &kp PG_DN  &kp N1  &kp N2  &kp N3  &kp KP_MULTIPLY  &trans
+                             &trans    &trans   &trans       &trans     &trans  &kp N0
             >;
         };
 
-        fun_layer {
+        symbol_layer {
             bindings = <
-&trans  &kp F1  &kp F4  &kp F7  &kp F10  &kp C_VOL_UP    &kp C_BRIGHTNESS_INC  &kp K_PASTE     &kp UP_ARROW    &kp K_COPY  &kp PRINTSCREEN  &trans
-&trans  &kp F2  &kp F5  &kp F8  &kp F11  &kp C_MUTE      &kp C_PLAY_PAUSE      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT   &kp PG_UP        &trans
-&trans  &kp F3  &kp F6  &kp F9  &kp F12  &kp C_VOL_DN    &kp C_BRIGHTNESS_DEC  &kp K_UNDO      &kp K_REDO      &kp K_CUT   &kp PAGE_DOWN    &trans
-                        &trans  &trans   &trans          &to 3                 &trans          &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH           &kp DOLLAR        &kp PERCENT       &kp CARET     &kp AMPERSAND   &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT           &kp UNDERSCORE    &kp MINUS     &kp EQUAL       &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp COLON              &trans
+&trans  &kp PIPE         &kp SLASH    &kp LESS_THAN      &kp GREATER_THAN  &kp PLUS          &kp QUESTION  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp NON_US_BACKSLASH  &kp SEMICOLON          &trans
+                                      &trans             &mo 3             &trans            &trans        &trans          &trans
             >;
         };
 
         sys_layer {
             bindings = <
-&trans  &trans        &trans        &bt BT_PRV    &bt BT_NXT    &trans            &none   &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans  &none   &none   &none   &none   &trans
-&trans  &bootloader   &sys_reset    &none         &bt BT_CLR    &bt BT_CLR_ALL    &none   &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans        &trans            &trans  &trans  &trans
+&trans  &trans        &trans        &bt BT_PRV    &bt BT_NXT    &trans            &none   &trans    &kp UP    &trans     &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &none   &trans
+&trans  &bootloader   &sys_reset    &none         &bt BT_CLR    &bt BT_CLR_ALL    &none   &trans    &trans    &trans     &trans  &trans
+                                    &trans        &trans        &trans            &trans  &trans    &trans
             >;
         };
 
@@ -178,11 +178,11 @@
             >;
         };
 
-        gallium_colemak_layer {
+        canary_layer {
             bindings = <
-&none  &kp B  &kp L  &kp D             &kp W         &kp Z             &kp SQT          &kp F      &kp O                     &kp U      &kp J       &none
-&none  &kp N  &kp R  &kp T             &kp S         &kp G             &kp Y            &kp H      &kp A                     &kp E      &kp I       &none
-&none  &kp Q  &kp X  &kp M             &kp C         &kp V             &kp K            &kp P      &kp SLASH                 &kp COMMA  &kp PERIOD  &none
+&none  &kp W  &kp L  &kp Y             &kp P         &kp B             &kp Z            &kp F      &kp O                     &kp U      &kp SQT     &none
+&none  &kp C  &kp R  &kp S             &kp T         &kp G             &kp M            &kp N      &kp E                     &kp I      &kp A       &none
+&none  &kp Q  &kp J  &kp V             &kp D         &kp K             &kp X            &kp H      &kp SLASH                 &kp COMMA  &kp PERIOD  &none
                      &mt LEFT_GUI DEL  &lt 1 ESCAPE  &mt LALT SPACE    &mt LCTRL ENTER  &lt 2 TAB  &mt RC(LSHIFT) BACKSPACE
             >;
         };
