@@ -135,10 +135,10 @@
 
         gallium_layer {
             bindings = <
-&none  &kp B  &kp L  &kp D         &kp C         &kp V             &kp J            &kp Y      &kp O                     &kp U          &kp COMMA   &none
-&none  &kp N  &kp R  &kp T         &kp S         &kp G             &kp P            &kp H      &kp A                     &kp E          &kp I       &none
-&none  &kp X  &kp Q  &kp M         &kp W         &kp Z             &kp K            &kp F      &kp SQT                   &kp SEMICOLON  &kp PERIOD  &none
-                     &mt LALT DEL  &lt 1 ESCAPE  &mt LGUI SPACE    &mt LCTRL ENTER  &lt 2 TAB  &mt RC(LSHIFT) BACKSPACE
+&none  &kp B  &kp L  &kp D         &kp C         &kp V             &kp J            &kp Y      &kp O                 &kp U          &kp COMMA   &none
+&none  &kp N  &kp R  &kp T         &kp S         &kp G             &kp P            &kp H      &kp A                 &kp E          &kp I       &none
+&none  &kp X  &kp Q  &kp M         &kp W         &kp Z             &kp K            &kp F      &kp SQT               &kp SEMICOLON  &kp PERIOD  &none
+                     &mt LALT DEL  &lt 1 ESCAPE  &mt LGUI SPACE    &mt LCTRL ENTER  &lt 2 TAB  &mt LSHIFT BACKSPACE
             >;
         };
 
