@@ -153,10 +153,10 @@
 
         symbol_layer {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH           &kp DOLLAR        &kp PERCENT       &kp CARET     &kp AMPERSAND   &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT           &kp UNDERSCORE    &kp MINUS     &kp EQUAL       &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp COLON              &trans
-&trans  &kp PIPE         &kp SLASH    &kp LESS_THAN      &kp GREATER_THAN  &kp PLUS          &kp QUESTION  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp BACKSLASH         &kp SEMICOLON          &trans
-                                      &trans             &mo 3             &trans            &trans        &trans          &trans
+&trans  &kp GRAVE        &kp TILDE    &kp HASH     &kp DOLLAR      &kp PERCENT       &kp CARET    &kp AT_SIGN   &kp ASTERISK   &kp EXCLAMATION  &kp QUESTION  &trans
+&trans  &kp MINUS        &kp EQUAL    &kp LPAR     &kp RPAR        &kp UNDERSCORE    &kp PLUS     &kp LBKT      &kp RBKT       &kp COLON        &kp SEMI      &trans
+&trans  &kp PIPE         &kp LT       &kp LBRC     &kp RBRC        &kp GT            &kp AMPS     &kp SQT       &kp DQT        &kp FSLH         &kp BSLH      &trans
+                                      &trans       &mo 3           &trans            &trans       &trans        &trans
             >;
         };
 
