@@ -9,14 +9,13 @@
 #include <dt-bindings/zmk/keys.h>
 
 // Optimize key repeat and debounce
+
 &sk {
     release-after-ms = <2000>;
     quick-release;
 };
 
-&caps_word {
-    continue-list = <UNDERSCORE MINUS BACKSPACE>;
-};
+&caps_word { continue-list = <UNDERSCORE MINUS BACKSPACE>; };
 
 &mt {
     tapping-term-ms = <280>;
@@ -25,7 +24,7 @@
     flavor = "balanced";
 };
 
-&lt { 
+&lt {
     tapping-term-ms = <200>;
     quick-tap-ms = <150>;
     require-prior-idle-ms = <100>;
@@ -169,10 +168,10 @@
 
         gallium_layer {
             bindings = <
-&none  &kp B  &kp L  &kp D         &kp C         &kp V             &kp J            &kp Y      &kp O                 &kp U          &kp COMMA   &none
-&none  &kp N  &kp R  &kp T         &kp S         &kp G             &kp P            &kp H      &kp A                 &kp E          &kp I       &none
-&none  &kp X  &kp Q  &kp M         &kp W         &kp Z             &kp K            &kp F      &kp SQT               &kp SEMICOLON  &kp PERIOD  &none
-                     &mt LALT ESC  &lt 2 TAB     &mt LGUI SPACE    &mt LCTRL ENTER  &lt 1 DEL  &mt LSHIFT BACKSPACE
+&none  &kp B  &kp L  &kp D         &kp C      &kp V             &kp J            &kp Y      &kp O                 &kp U          &kp COMMA   &none
+&none  &kp N  &kp R  &kp T         &kp S      &kp G             &kp P            &kp H      &kp A                 &kp E          &kp I       &none
+&none  &kp X  &kp Q  &kp M         &kp W      &kp Z             &kp K            &kp F      &kp SQT               &kp SEMICOLON  &kp PERIOD  &none
+                     &mt LALT ESC  &lt 2 TAB  &mt LGUI SPACE    &mt LCTRL ENTER  &lt 1 DEL  &mt LSHIFT BACKSPACE
             >;
         };
 
@@ -181,16 +180,16 @@
 &trans  &kp F1     &kp F2    &kp F3    &kp F4   &kp F5       &kp KP_DIVIDE    &kp N1  &kp N2  &kp N3  &kp KP_PLUS   &trans
 &trans  &kp F7     &kp F8    &kp F9    &kp F10  &kp F11      &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_MINUS  &trans
 &trans  &kp PSCRN  &kp CAPS  &kp HOME  &kp END  &kp PG_UP    &kp F12          &kp N7  &kp N8  &kp N9  &kp DOT       &trans
-                             &mo 3     &trans   &trans       &kp N0           &trans  &trans
+                             &trans    &mo 3    &trans       &trans           &trans  &kp N0
             >;
         };
 
         symbol_layer {
             bindings = <
-&trans  &kp GRAVE        &kp TILDE    &kp HASH     &kp DOLLAR      &kp PERCENT       &kp CARET    &kp AT_SIGN   &kp ASTERISK   &kp EXCLAMATION  &kp QUESTION  &trans
-&trans  &kp UNDERSCORE   &kp MINUS    &kp LPAR     &kp RPAR        &kp LBKT          &kp RBKT     &kp EQUAL     &kp PLUS       &kp COLON        &kp SEMI      &trans
-&trans  &kp PIPE         &kp LT       &kp LBRC     &kp RBRC        &kp GT            &kp AMPS     &kp SQT       &kp DQT        &kp FSLH         &kp BSLH      &trans
-                                      &trans       &trans          &trans            &trans       &mo 3         &trans
+&trans  &kp GRAVE       &kp TILDE  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AT_SIGN  &kp ASTERISK  &kp EXCLAMATION  &kp QUESTION  &trans
+&trans  &kp UNDERSCORE  &kp MINUS  &kp LPAR  &kp RPAR    &kp LBKT       &kp RBKT   &kp EQUAL    &kp PLUS      &kp COLON        &kp SEMI      &trans
+&trans  &kp PIPE        &kp LT     &kp LBRC  &kp RBRC    &kp GT         &kp AMPS   &kp SQT      &kp DQT       &kp FSLH         &kp BSLH      &trans
+                                   &trans    &trans      &trans         &trans     &mo 3        &trans
             >;
         };
 
