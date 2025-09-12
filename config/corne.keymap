@@ -184,7 +184,6 @@
                              &trans    &trans   &trans       &kp N0           &mo 3   &trans
             >;
         };
-        };
 
         symbol_layer {
             bindings = <
