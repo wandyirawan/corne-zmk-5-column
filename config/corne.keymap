@@ -159,6 +159,118 @@
             key-positions = <27 28>;
             timeout-ms = <35>;
         };
+
+        // Programming bigram combos from plan.md
+        combo_eqeq {
+            timeout-ms = <35>;
+            key-positions = <17 18>;
+            bindings = <&macro_eqeq>;
+        };
+
+        combo_pluseq {
+            timeout-ms = <35>;
+            key-positions = <20 19>;
+            bindings = <&macro_pluseq>;
+        };
+
+        combo_minuseq {
+            timeout-ms = <35>;
+            key-positions = <14 19>;
+            bindings = <&macro_minuseq>;
+        };
+
+        combo_noteq {
+            timeout-ms = <35>;
+            key-positions = <9 19>;
+            bindings = <&macro_noteq>;
+        };
+
+        combo_arrow {
+            timeout-ms = <40>;
+            key-positions = <14 29>;
+            bindings = <&macro_arrow>;
+        };
+
+        combo_fatarrow {
+            timeout-ms = <40>;
+            key-positions = <19 29>;
+            bindings = <&macro_fatarrow>;
+        };
+
+        // Bracket pairs
+        combo_parens {
+            timeout-ms = <35>;
+            key-positions = <15 16>;
+            bindings = <&macro_parens>;
+        };
+
+        combo_brackets {
+            timeout-ms = <35>;
+            key-positions = <27 28>;
+            bindings = <&macro_brackets>;
+        };
+
+        combo_braces {
+            timeout-ms = <35>;
+            key-positions = <17 18>;
+            bindings = <&macro_braces>;
+        };
+    };
+
+    macros {
+        macro_eqeq: macro_eqeq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp EQUAL>;
+        };
+
+        macro_pluseq: macro_pluseq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PLUS &kp EQUAL>;
+        };
+
+        macro_minuseq: macro_minuseq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp EQUAL>;
+        };
+
+        macro_noteq: macro_noteq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EXCLAMATION &kp EQUAL>;
+        };
+
+        macro_arrow: macro_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GREATER_THAN>;
+        };
+
+        macro_fatarrow: macro_fatarrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
+        };
+
+        macro_parens: macro_parens {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR>;
+        };
+
+        macro_brackets: macro_brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT>;
+        };
+
+        macro_braces: macro_braces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC &kp RBRC>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -186,10 +298,10 @@
 
         symbol_layer {
             bindings = <
-&trans  &kp GRAVE       &kp TILDE  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AT_SIGN  &kp ASTERISK  &kp EXCLAMATION  &kp QUESTION  &trans
-&trans  &kp UNDERSCORE  &kp MINUS  &kp LPAR  &kp RPAR    &kp LBKT       &kp RBKT   &kp EQUAL    &kp PLUS      &kp COLON        &kp SEMI      &trans
-&trans  &kp PIPE        &kp LT     &kp LBRC  &kp RBRC    &kp GT         &kp AMPS   &kp SQT      &kp DQT       &kp FSLH         &kp BSLH      &trans
-                                   &trans    &trans      &trans         &trans     &mo 3        &trans
+&trans  &kp GRAVE       &trans     &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AT_SIGN  &kp ASTERISK  &kp EXCLAMATION  &kp QUESTION  &trans
+&trans  &kp UNDERSCORE  &kp MINUS  &kp LPAR  &kp RPAR    &kp LBRC       &kp RBRC   &kp EQUAL    &kp PLUS      &kp DQT          &kp SEMI      &trans
+&trans  &kp PIPE        &kp LT     &kp LBKT  &kp RBKT    &kp GT         &kp AMPS   &kp SQT      &kp COLON     &kp FSLH         &kp BSLH      &trans
+                                    &trans    &trans      &trans         &trans     &mo 3        &trans
             >;
         };
 
