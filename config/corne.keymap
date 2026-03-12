@@ -39,7 +39,6 @@
             key-positions = <10 9>;
             bindings = <&kp BACKSPACE>;
             require-prior-idle-ms = <100>;
-            slow-release;
         };
 
         combo_tab {
@@ -162,12 +161,6 @@
 
         // Programming bigram combos from plan.md
 
-        combo_eqeq {
-            timeout-ms = <35>;
-            key-positions = <17 18>;
-            bindings = <&macro_eqeq>;
-        };
-
         combo_pluseq {
             timeout-ms = <35>;
             key-positions = <20 19>;
@@ -206,12 +199,6 @@
             bindings = <&macro_parens>;
         };
 
-        combo_brackets {
-            timeout-ms = <35>;
-            key-positions = <27 28>;
-            bindings = <&macro_brackets>;
-        };
-
         combo_braces {
             timeout-ms = <35>;
             key-positions = <17 18>;
@@ -220,12 +207,6 @@
     };
 
     macros {
-        macro_eqeq: macro_eqeq {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp EQUAL>;
-        };
-
         macro_pluseq: macro_pluseq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -260,12 +241,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LPAR &kp RPAR>;
-        };
-
-        macro_brackets: macro_brackets {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LBKT &kp RBKT>;
         };
 
         macro_braces: macro_braces {
