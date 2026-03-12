@@ -161,6 +161,7 @@
         };
 
         // Programming bigram combos from plan.md
+
         combo_eqeq {
             timeout-ms = <35>;
             key-positions = <17 18>;
@@ -198,6 +199,7 @@
         };
 
         // Bracket pairs
+
         combo_parens {
             timeout-ms = <35>;
             key-positions = <15 16>;
@@ -298,10 +300,10 @@
 
         symbol_layer {
             bindings = <
-&trans  &kp GRAVE       &trans     &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AT_SIGN  &kp ASTERISK  &kp EXCLAMATION  &kp QUESTION  &trans
+&trans  &kp GRAVE       &kp TILDE  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AT_SIGN  &kp ASTERISK  &kp EXCLAMATION  &kp QUESTION  &trans
 &trans  &kp UNDERSCORE  &kp MINUS  &kp LPAR  &kp RPAR    &kp LBRC       &kp RBRC   &kp EQUAL    &kp PLUS      &kp DQT          &kp SEMI      &trans
 &trans  &kp PIPE        &kp LT     &kp LBKT  &kp RBKT    &kp GT         &kp AMPS   &kp SQT      &kp COLON     &kp FSLH         &kp BSLH      &trans
-                                    &trans    &trans      &trans         &trans     &mo 3        &trans
+                                   &trans    &trans      &trans         &trans     &mo 3        &trans
             >;
         };
 
