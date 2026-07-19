@@ -287,7 +287,7 @@
 &trans  &trans        &trans        &bt BT_PRV    &bt BT_NXT    &trans            &none   &trans    &kp UP    &trans     &trans  &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &none   &trans
 &trans  &bootloader   &sys_reset    &none         &bt BT_CLR    &bt BT_CLR_ALL    &none   &trans    &trans    &trans     &trans  &trans
-                                    &trans        &trans        &trans            &trans  &trans    &trans
+                                    &trans        &trans        &tog 6            &trans  &trans    &trans
             >;
         };
 
@@ -306,6 +306,15 @@
 &none  &kp C  &kp R  &kp S         &kp T         &kp G                 &kp M            &kp N      &kp E                     &kp I      &kp A       &none
 &none  &kp Q  &kp J  &kp V         &kp D         &kp K                 &kp X            &kp H      &kp SLASH                 &kp COMMA  &kp PERIOD  &none
                      &mt LALT DEL  &lt 1 ESCAPE  &mt LEFT_GUI SPACE    &mt LCTRL ENTER  &lt 2 TAB  &mt RC(LSHIFT) BACKSPACE
+            >;
+        };
+
+        mac_layer {
+            bindings = <
+&none  &kp B  &kp L  &kp D         &kp C      &kp V             &kp J            &kp Y      &kp O                 &kp U          &kp COMMA   &none
+&none  &kp N  &kp R  &kp T         &kp S      &kp G             &kp P            &kp H      &kp A                 &kp E          &kp I       &none
+&none  &kp X  &kp Q  &kp M         &kp W      &kp Z             &kp K            &kp F      &kp SQT               &kp SEMICOLON  &kp PERIOD  &none
+                     &mt LGUI ESC  &lt 2 TAB  &mt LALT SPACE    &mt LCTRL ENTER  &lt 1 DEL  &mt LSHIFT BACKSPACE
             >;
         };
     };
