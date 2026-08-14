@@ -204,6 +204,11 @@
             key-positions = <17 18>;
             bindings = <&macro_braces>;
         };
+
+        alt_right_combo {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <13 25>;
+        };
     };
 
     macros {
@@ -275,10 +280,10 @@
 
         symbol_layer {
             bindings = <
-&trans  &kp GRAVE       &kp TILDE      &kp LBRC       &kp RBRC        &kp PERCENT    &kp CARET  &kp AMPS       &kp ASTERISK  &kp EXCLAMATION  &kp QUESTION  &trans
-&trans  &kp BSLH        &kp LBKT       &kp LPAR       &kp RPAR        &kp RBKT       &kp GT     &kp EQUAL      &kp COLON     &kp MINUS        &kp FSLH      &trans
-&trans  &kp PIPE        &kp HASH       &kp LT         &kp DQT         &kp AT_SIGN    &kp UNDER  &kp PLUS       &kp SQT       &kp SEMI         &kp DOLLAR    &trans
-                                         &trans        &trans          &trans         &trans     &mo 3          &trans
+&trans  &kp GRAVE  &kp TILDE  &kp LBRC  &kp RBRC  &kp PERCENT    &kp CARET  &kp AMPS   &kp ASTERISK  &kp EXCLAMATION  &kp QUESTION  &trans
+&trans  &kp BSLH   &kp LBKT   &kp LPAR  &kp RPAR  &kp RBKT       &kp GT     &kp EQUAL  &kp COLON     &kp MINUS        &kp FSLH      &trans
+&trans  &kp PIPE   &kp HASH   &kp LT    &kp DQT   &kp AT_SIGN    &kp UNDER  &kp PLUS   &kp SQT       &kp SEMI         &kp DOLLAR    &trans
+                              &trans    &trans    &trans         &trans     &mo 3      &trans
             >;
         };
 
