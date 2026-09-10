@@ -61,56 +61,6 @@
             key-positions = <33 34>;
         };
 
-        exclm {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <1 13>;
-        };
-
-        at {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <2 14>;
-        };
-
-        hash {
-            bindings = <&kp HASH>;
-            key-positions = <3 15>;
-        };
-
-        dllr {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-        };
-
-        percnt {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
-        };
-
-        caret {
-            bindings = <&kp CARET>;
-            key-positions = <6 18>;
-        };
-
-        and {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <7 19>;
-        };
-
-        str {
-            bindings = <&kp ASTERISK>;
-            key-positions = <8 20>;
-        };
-
-        leftparen {
-            bindings = <&kp LPAR>;
-            key-positions = <9 21>;
-        };
-
-        rparen {
-            bindings = <&kp RPAR>;
-            key-positions = <10 22>;
-        };
-
         layout_switch {
             bindings = <&tog 4>;
             key-positions = <36 37 40 41>;
@@ -136,11 +86,6 @@
             key-positions = <36 37>;
         };
 
-        caps_combo {
-            bindings = <&caps_word>;
-            key-positions = <13 14>;
-        };
-
         undo_combo {
             bindings = <&kp LC(Z)>;
             key-positions = <25 26 27>;
@@ -160,50 +105,7 @@
         };
 
         // Programming bigram combos from plan.md
-
-        combo_pluseq {
-            timeout-ms = <35>;
-            key-positions = <20 19>;
-            bindings = <&macro_pluseq>;
-        };
-
-        combo_minuseq {
-            timeout-ms = <35>;
-            key-positions = <14 19>;
-            bindings = <&macro_minuseq>;
-        };
-
-        combo_noteq {
-            timeout-ms = <35>;
-            key-positions = <9 19>;
-            bindings = <&macro_noteq>;
-        };
-
-        combo_arrow {
-            timeout-ms = <40>;
-            key-positions = <14 29>;
-            bindings = <&macro_arrow>;
-        };
-
-        combo_fatarrow {
-            timeout-ms = <40>;
-            key-positions = <19 29>;
-            bindings = <&macro_fatarrow>;
-        };
-
         // Bracket pairs
-
-        combo_parens {
-            timeout-ms = <35>;
-            key-positions = <15 16>;
-            bindings = <&macro_parens>;
-        };
-
-        combo_braces {
-            timeout-ms = <35>;
-            key-positions = <17 18>;
-            bindings = <&macro_braces>;
-        };
 
         alt_right_combo {
             bindings = <&kp LEFT_ALT>;
