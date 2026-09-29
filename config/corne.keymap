@@ -111,6 +111,11 @@
             bindings = <&kp LEFT_ALT>;
             key-positions = <13 25>;
         };
+
+        space_combo {
+            bindings = <&kp SPACE>;
+            key-positions = <30 31 32>;
+        };
     };
 
     macros {
